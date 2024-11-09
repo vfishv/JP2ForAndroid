@@ -8,7 +8,7 @@ android {
     namespace "com.gemalto.jp2"
 
     defaultConfig {
-        minSdkVersion 16
+        minSdkVersion 19
         targetSdkVersion 35
         versionName "1.0.3"
         versionCode 4
@@ -32,7 +32,7 @@ android {
             path "CMakeLists.txt"
         }
     }
-    ndkVersion '23.2.8568313'
+    ndkVersion '25.2.9519653'
 }
 
 dependencies {
