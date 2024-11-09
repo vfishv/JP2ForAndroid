@@ -1,7 +1,7 @@
 apply plugin: 'com.android.library'
-apply plugin: 'maven-publish'
-apply plugin: 'com.github.dcendents.android-maven'
-apply plugin: 'com.jfrog.bintray'
+//apply plugin: 'maven-publish'
+//apply plugin: 'com.github.dcendents.android-maven'
+//apply plugin: 'com.jfrog.bintray'
 
 android {
     compileSdkVersion 35
@@ -37,15 +37,16 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation 'androidx.annotation:annotation:1.1.0'
+    implementation 'androidx.annotation:annotation:1.6.0'
     //testImplementation 'junit:junit:4.13.1'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 }
 
 /*************************************************************/
 /******************* PUBLISHING STUFF ************************/
 /*************************************************************/
+/*
 //create a sources jar
 task sourceJar(type: Jar) {
     from android.sourceSets.main.java.srcDirs
@@ -95,3 +96,4 @@ ext {
 }
 
 apply from: 'bintray.gradle'
+*/

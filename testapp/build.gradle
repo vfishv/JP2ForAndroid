@@ -15,6 +15,7 @@ android {
         buildConfig = true
     }
     signingConfigs {
+        /*
         release {
             //TODO update the path to your keystore and the related variables
             storeFile file(defaultKeyStoreFile)
@@ -29,6 +30,7 @@ android {
                 minifyEnabled false
             }
         }
+        */
     }
 
 }
