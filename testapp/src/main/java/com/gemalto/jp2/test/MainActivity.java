@@ -10,6 +10,7 @@ import android.widget.ImageView;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.gemalto.jp2.JP2Decoder;
+import com.gemalto.openjpeg.test.R;
 
 import java.io.Closeable;
 import java.io.IOException;

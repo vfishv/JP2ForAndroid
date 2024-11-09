@@ -4,10 +4,12 @@ apply plugin: 'com.github.dcendents.android-maven'
 apply plugin: 'com.jfrog.bintray'
 
 android {
-    compileSdkVersion 30
+    compileSdkVersion 35
+    namespace "com.gemalto.jp2"
+
     defaultConfig {
         minSdkVersion 14
-        targetSdkVersion 30
+        targetSdkVersion 35
         versionName "1.0.3"
         versionCode 4
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
@@ -16,6 +18,9 @@ android {
                 cppFlags ""
             }
         }
+    }
+    buildFeatures {
+        buildConfig = true
     }
     buildTypes {
         release {
@@ -27,7 +32,7 @@ android {
             path "CMakeLists.txt"
         }
     }
-    ndkVersion '22.0.7026061'
+    ndkVersion '22.1.7171670'
 }
 
 dependencies {
