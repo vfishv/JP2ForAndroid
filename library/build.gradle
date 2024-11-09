@@ -4,11 +4,11 @@ apply plugin: 'com.android.library'
 //apply plugin: 'com.jfrog.bintray'
 
 android {
-    compileSdkVersion 35
+    compileSdk 35
     namespace "com.gemalto.jp2"
 
     defaultConfig {
-        minSdkVersion 14
+        minSdkVersion 16
         targetSdkVersion 35
         versionName "1.0.3"
         versionCode 4
@@ -32,7 +32,7 @@ android {
             path "CMakeLists.txt"
         }
     }
-    ndkVersion '22.1.7171670'
+    ndkVersion '23.2.8568313'
 }
 
 dependencies {
